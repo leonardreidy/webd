@@ -21,6 +21,6 @@
           ]
       }
     },
-    "runArgs": ["--network=${localEnv:USER}_webd_net", "--name", "${localEnv:USER}_webd_devcontainer"],
+    "runArgs": ["--network=webd_net", "--name", "${localEnv:USER}_webd_devcontainer"],
     "remoteUser": "node"
   }
