@@ -9,6 +9,7 @@
       }
     },
     "workspaceFolder": "/workspace",
+    "initializeCommand": "docker network create webd_net",
     "postCreateCommand": "npm install -g npm@latest && npm install -g @devcontainers/cli",
     "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
     "customizations": {
