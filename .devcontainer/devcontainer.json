@@ -25,6 +25,5 @@
          }
     }
   },
-  "runArgs": [ "--name", "webd_devcontainer"],
   "remoteUser": "node"
 }
