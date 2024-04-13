@@ -9,7 +9,6 @@
       }
     },
     "workspaceFolder": "/workspace",
-    "initializeCommand": "docker network create webd_net",
     "postCreateCommand": "npm install -g npm@latest && npm install -g @devcontainers/cli",
     "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
     "customizations": {
@@ -22,6 +21,6 @@
           ]
       }
     },
-    "runArgs": ["--network=webd_net", "--name", "${localEnv:USER}_webd_devcontainer"],
+    "runArgs": [ "--name", "webd_devcontainer"],
     "remoteUser": "node"
   }
