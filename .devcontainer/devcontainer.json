@@ -9,7 +9,7 @@
     }
   },
   "workspaceFolder": "/workspace",
-  "workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=bind,consistency=consistent",
+  "mounts": [{ "source": "${localWorkspaceFolder}", "target": "/workspace", "type": "volume" }],
   "postCreateCommand": "npm install -g npm@latest && npm install -g @devcontainers/cli",
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "customizations": {
@@ -21,7 +21,7 @@
           "mads-hartmann.bash-ide-vscode"
         ],
         "settings": {
-          "workbench.colorTheme": "Monokai Dimmed"
+          "workbench.colorTheme": "Two Monokai"
          }
     }
   },
