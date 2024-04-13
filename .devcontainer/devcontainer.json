@@ -1,15 +1,15 @@
 {
   "name": "webd",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-  "forwardPorts": [9173],
+  "dockerComposeFile": "../docker-compose.yaml",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "service": "webd",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "18.17.0",
       "nodeGypDependencies": true
     }
-  },
-  "workspaceFolder": "/workspace",
-  "mounts": [{ "source": "${localWorkspaceFolder}", "target": "/workspace", "type": "volume" }],
+  },  
   "postCreateCommand": "npm install -g npm@latest && npm install -g @devcontainers/cli",
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "customizations": {
