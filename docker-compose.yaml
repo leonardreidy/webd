@@ -1,13 +1,15 @@
-version: '3.8'
+version: '3.9'
 
 services:
   webd:
     build:
       context: .
+      dockerfile: Dockerfile
     container_name: webd_devcontainer
     environment:
       - SOME_ENV_VAR=${SOME_ENV_VAR:-some-env-var}
-    image: mcr.microsoft.com/devcontainers/javascript-node:18
     ports:
       - 3993:3993
+    volumes:
+      - .:/workspace
    
