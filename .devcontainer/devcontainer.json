@@ -9,7 +9,7 @@
     }
   },
   "workspaceFolder": "/workspace",
-  "workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=volume",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=volume",
   "postCreateCommand": "npm install -g npm@latest && npm install -g @devcontainers/cli",
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "customizations": {
