@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   webd:
+    build: .
     container_name: webd_devcontainer
     environment:
       - SOME_ENV_VAR=${SOME_ENV_VAR:-some-env-var}
